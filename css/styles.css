@@ -1,3 +1,10 @@
+/*
+Text Color (Gray13): #212121;
+Primary Color (Dark Red): #781820;
+Secondary Color (Gray): #ABABAB;
+Tertiary Color (Yellow): #cead00;
+*/
+
 header .row div {
   background-color: pink;
   border: 1px solid tomato;
@@ -8,7 +15,7 @@ main .row div,
 main .row content {
   background-color: lightgreen;
   border: 1px solid green;
-  height: 80px;
+  height: auto;
 }
 
 footer .row div {
@@ -23,12 +30,10 @@ footer .row div {
 }
 
 #pokemonButton {
+  background-color: #781820;
+  color: #FFF;
+  /* border: inherit;
+  justify-content: center; */
   text-align: center;
   width: 20%;
-}
-
-.btn {
-  background-color: inherit;
-  border: 0px solid rgba(0,0,0,.125);
-  justify-content: center;
 }
