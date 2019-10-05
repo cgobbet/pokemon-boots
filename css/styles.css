@@ -5,10 +5,19 @@ Secondary Color (Gray): #ABABAB;
 Tertiary Color (Yellow): #cead00;
 */
 
+html, body {
+  background-color: #f7f8fb;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin: 0; padding: 0;
+}
+
 header .row div {
-  background-color: pink;
-  border: 1px solid tomato;
-  height: 50px;
+  /* background-color: pink;
+  border: 1px solid tomato; */
+  height: auto;
 }
 
 main .row div,
@@ -22,6 +31,24 @@ footer .row div {
   background-color: lightyellow;
   border: 1px solid orange;
   height: 50px;
+}
+
+.title {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari and Chrome */
+  -o-animation: fadein 2s;
+  /* Opera */
+}
+
+.capital {
+  text-transform:capitalize;
 }
 
 #pokemonItem {
