@@ -1,6 +1,6 @@
 var pokemonRepository = (function() {
   var repository = [];
-  var apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+  var apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=800';
   var $modalContainer = $('#modal-container');
 
   function add(pokemon) {
@@ -17,8 +17,8 @@ var pokemonRepository = (function() {
 
   function addListItem(pokemon) {
     var $pokemonList = $('.list-group');
-    var $pokemonListItem = $('<li class="list-group-item" id="pokemonItem">');
-    var $pokemonButton = $('<button type="button" class="btn" id="pokemonButton"></button>');
+    var $pokemonListItem = $('<li class="list-group-item d-flex justify-content-center" id="pokemonItem">');
+    var $pokemonButton = $('<button type="button" class="btn text-center" id="pokemonButton"></button>');
 
     $pokemonListItem.appendTo($pokemonList);
     $pokemonButton.appendTo($pokemonListItem);
@@ -77,7 +77,7 @@ var pokemonRepository = (function() {
     $modal.addClass('modal');
 
     // creates button to close modal and activate hideModal()
-    var $modalCloseButton = $('<button id ="modalCloseButton"></button>');
+    var $modalCloseButton = $('<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pokemonButton">Close</button>');
     $modalCloseButton.addClass('modal-close');
     $modalCloseButton.text('Close');
     $modalCloseButton.click(function() {
