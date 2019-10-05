@@ -1,6 +1,6 @@
 var pokemonRepository = (function() {
   var repository = [];
-  var apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=800';
+  var apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
   var $modalContainer = $('#modal-container');
 
   function add(pokemon) {
@@ -73,7 +73,7 @@ var pokemonRepository = (function() {
   function showModal(pokemon) {
     $($modalContainer).html('');
     // creates div for modal itself
-    var $modal = $('<div id="modal"></div>');
+    var $modal = $('<div class="container" id="modal"></div>');
     $modal.addClass('modal');
 
     // creates button to close modal and activate hideModal()
@@ -85,7 +85,7 @@ var pokemonRepository = (function() {
     // });
 
     // creates button to close modal and activate hideModal()
-    var $modalCloseButton = $('<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pokemonButton"></button>');
+    var $modalCloseButton = $('<button type="button" class="btn btn-primary" data-toggle="modal" data-target="?"></button>');
     $modalCloseButton.addClass('modal-close');
     $modalCloseButton.text('Close');
     $modalCloseButton.click(function() {
