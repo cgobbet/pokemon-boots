@@ -77,7 +77,15 @@ var pokemonRepository = (function() {
     $modal.addClass('modal');
 
     // creates button to close modal and activate hideModal()
-    var $modalCloseButton = $('<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pokemonButton">Close</button>');
+    // var $modalCloseButton = $('<button id ="modalCloseButton"></button>');
+    // $modalCloseButton.addClass('modal-close');
+    // $modalCloseButton.text('Close');
+    // $modalCloseButton.click(function() {
+    //   hideModal();
+    // });
+
+    // creates button to close modal and activate hideModal()
+    var $modalCloseButton = $('<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pokemonButton"></button>');
     $modalCloseButton.addClass('modal-close');
     $modalCloseButton.text('Close');
     $modalCloseButton.click(function() {
