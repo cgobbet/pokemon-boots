@@ -22,8 +22,8 @@ header .row div {
 
 main .row div,
 main .row content {
-  background-color: lightgreen;
-  border: 1px solid green;
+  background-color: inherit;
+  /* border: 1px solid green; */
   height: auto;
 }
 
@@ -46,6 +46,24 @@ footer .row div {
   -o-animation: fadein 2s;
   /* Opera */
 }
+
+.hero-bkg-animated {
+  background: gray url(https://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  height: 4000px;
+  padding-top: 40px;
+  box-sizing: border-box;
+  -webkit-animation: slide 20s linear infinite;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
+/* Background animation by subz - https://tinyurl.com/y4ezm4bs */
 
 .capital {
   text-transform:capitalize;
