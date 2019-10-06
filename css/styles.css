@@ -1,6 +1,6 @@
 /*
 Text Color (Gray13): #212121;
-  Primary Color (Dark Red): #781820;
+  Primary Color (Red): #A9000E;
 Secondary Color (Gray): #ABABAB;
 Tertiary Color (Yellow): #cead00;
 */
@@ -8,7 +8,7 @@ Tertiary Color (Yellow): #cead00;
 html, body {
   background-color: #f7f8fb;
   color: black;
-  font-family: "Press Start", sans-serif;
+  font-family: "Press Start 2P", sans-serif;
   font-size: 18px;
   text-align: center;
   margin: 0;
@@ -54,7 +54,7 @@ footer .row div {
   font-family: "Permanent Marker", sans-serif;
   /* font-size: 2.4rem;
   line-height: 1.5; */
-  color: #781820;
+  color: #A9000E;
   font-size: 96px;
   font-weight: bold;
   text-align: center;
@@ -89,7 +89,7 @@ footer .row div {
 
 #pokemonButton {
   font-family: "Neucha", sans-serif;
-  background-color: #781820;
+  background-color: #A9000E;
   font-size:3vw;
   color: #FFF;
   text-align: center;
@@ -113,10 +113,10 @@ footer .row div {
   right: 20px;
   width: 80%;
   height: 60%;
-  background: rgba(99, 14, 24, 0.8);
-  /* background-color: #781820; */
+  background: rgba(99, 14, 24, 0.9);
+  /* background-color: #A9000E; */
   background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
-  /* color: #781820; */
+  /* color: #A9000E; */
   /* z-index: 999; */
   /* overflow: auto;
   max-width: 100%; */
@@ -129,12 +129,12 @@ footer .row div {
   position: fixed;
   display: block;
   z-index: 3000;
-  height: 50%;
+  height: 45%;
 }
 
 /* .modal {
   margin: auto;
-  color: #781820;
+  color: #A9000E;
   background-color: #EBEBEB;
   display: inline-block;
   border-radius: 12px;
@@ -146,25 +146,26 @@ footer .row div {
   text-align: left;
 } */
 
-.modal h1 {
-  font-family: "Press Start 2P", sans-serif;
+/* .modal h1 {
+  font-family: "Permanent Marker", sans-serif;
   font-size: 24px;
   margin-top: 0;
-}
+} */
 
 .modal h2 {
-  font-family: "Press Start 2P", sans-serif;
+  font-family: "Permanent Marker", sans-serif;
   font-size: 3.5vw;
   margin-top: 0;
 }
 
 .modal p {
   margin-bottom: 0;
-  font-family: "Press Start 2P", sans-serif;
-  font-size: 2.5vw;
+  font-family: "Bubblegum Sans", sans-serif;
+  font-size: 3vw;
 }
 
 .modal-close {
+  font-family: "Bubblegum Sans", sans-serif;
   float: right;
   border-radius: 12px;
   /* font-weight: bold; */
