@@ -83,33 +83,29 @@ footer .row div {
   width: 20%;
 }
 
-/* .modal {
-
-} */
-
 /* start of modal elements  */
 
 #modal-container {
   display: none;
   text-align: center;
-  color: purple;
-  position: fixed;
-  padding: 100px;
-  box-sizing: border-box;
+  /* color: purple;
+  position: fixed; */
+  padding: 20px;
+  /* box-sizing: border-box; */
   top: 20px;
   left: 20px;
   right: 20px;
-  width: 100%;
+  width: 80%;
   height: 60%;
-  background: rgba(0, 0, 0, 0.6);
-  color: #781820;
-  z-index: 999;
-  overflow: auto;
-  max-width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  /* color: #781820; */
+  /* z-index: 999; */
+  /* overflow: auto;
+  max-width: 100%; */
 }
 
 #modal-container.is-visible {
-  color: fuchsia;
+  color: #EBEBEB; // text color on modal
   font-size: 18px;
   position: fixed;
   display: block;
@@ -122,20 +118,13 @@ footer .row div {
   color: #781820;
   background-color: #EBEBEB;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 12px;
   box-sizing: border-box;
   background: #D6D6D6;
   padding: 15px;
   width: 40%;
   max-width: 40%;
   text-align: left;
-  animation: fadein 1s;
-  -moz-animation: fadein 1.5s;
-  /* Firefox */
-  -webkit-animation: fadein 1.5s;
-  /* Safari and Chrome */
-  -o-animation: fadein 1.5s;
-  /* Opera */
 }
 
 .modal h1 {
