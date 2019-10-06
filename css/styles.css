@@ -30,8 +30,16 @@ main .row content {
 
 footer .row div {
   background-color: inherit;
-  /* border: 1px solid orange; */
   height: 50px;
+}
+
+.img-fluid. {
+  max-width: 120px;
+  height: auto;
+}
+
+.navbar {
+  padding: 0;
 }
 
 .title {
@@ -80,9 +88,9 @@ footer .row div {
 }
 
 #pokemonButton {
-  font-family: "Press Start 2P", sans-serif;
+  font-family: "Neucha", sans-serif;
   background-color: #781820;
-  font-size:1.7vw;
+  font-size:3vw;
   color: #FFF;
   text-align: center;
   width: auto;
