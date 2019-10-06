@@ -8,7 +8,7 @@ Tertiary Color (Yellow): #cead00;
 html, body {
   background-color: #f7f8fb;
   color: black;
-  font-family: "Press Start 2P", sans-serif;
+  font-family: "Bubblegum Sans", sans-serif;
   font-size: 18px;
   text-align: center;
   margin: 0;
@@ -16,15 +16,12 @@ html, body {
 }
 
 header .row div {
-  /* background-color: pink;
-  border: 1px solid tomato; */
   height: auto;
 }
 
 main .row div,
 main .row content {
   background-color: inherit;
-  /* border: 1px solid green; */
   height: auto;
 }
 
@@ -52,8 +49,6 @@ footer .row div {
 
 .dateStyle {
   font-family: "Permanent Marker", sans-serif;
-  /* font-size: 2.4rem;
-  line-height: 1.5; */
   color: #A9000E;
   font-size: 96px;
   font-weight: bold;
@@ -104,22 +99,14 @@ footer .row div {
   display: none;
   text-align: center;
   border-radius: 12px;
-  /* color: purple;
-  position: fixed; */
   padding: 20px;
-  /* box-sizing: border-box; */
   top: 100px;
   left: 20px;
   right: 20px;
   width: 80%;
   height: 60%;
   background: rgba(99, 14, 24, 0.9);
-  /* background-color: #A9000E; */
-  background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
-  /* color: #A9000E; */
-  /* z-index: 999; */
-  /* overflow: auto;
-  max-width: 100%; */
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
 }
 
 #modal-container.is-visible {
@@ -131,26 +118,6 @@ footer .row div {
   z-index: 3000;
   height: 45%;
 }
-
-/* .modal {
-  margin: auto;
-  color: #A9000E;
-  background-color: #EBEBEB;
-  display: inline-block;
-  border-radius: 12px;
-  box-sizing: border-box;
-  background: #D6D6D6;
-  padding: 15px;
-  width: 40%;
-  max-width: 40%;
-  text-align: left;
-} */
-
-/* .modal h1 {
-  font-family: "Permanent Marker", sans-serif;
-  font-size: 24px;
-  margin-top: 0;
-} */
 
 .modal h2 {
   font-family: "Permanent Marker", sans-serif;
@@ -168,12 +135,10 @@ footer .row div {
   font-family: "Bubblegum Sans", sans-serif;
   float: right;
   border-radius: 12px;
-  /* font-weight: bold; */
   -webkit-appearance: none;
   border: solid 0.5px #cead00;
   background-color: inherit;
   color: #fff;
-  /* text-decoration: underline; */
 }
 
 .modal-close:hover {
