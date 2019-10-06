@@ -34,8 +34,8 @@ footer .row div {
 }
 
 .title {
-  font-family: "Press Start 2P", sans-serif;
-  font-size: 48px;
+  font-family: "Bubblegum Sans", sans-serif;
+  font-size: 80px;
   font-weight: bold;
   text-align: center;
   animation: fadein 2s;
@@ -45,6 +45,16 @@ footer .row div {
   /* Safari and Chrome */
   -o-animation: fadein 2s;
   /* Opera */
+}
+
+.dateStyle {
+  font-family: "Permanent Marker", sans-serif;
+  /* font-size: 2.4rem;
+  line-height: 1.5; */
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+
 }
 
 .hero-bkg-animated {
@@ -88,16 +98,19 @@ footer .row div {
 #modal-container {
   display: none;
   text-align: center;
+  border-radius: 12px;
   /* color: purple;
   position: fixed; */
   padding: 20px;
   /* box-sizing: border-box; */
-  top: 20px;
+  top: 100px;
   left: 20px;
   right: 20px;
   width: 80%;
   height: 60%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(99, 14, 24, 0.8);
+  /* background-color: #781820; */
+  background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
   /* color: #781820; */
   /* z-index: 999; */
   /* overflow: auto;
@@ -113,7 +126,7 @@ footer .row div {
   height: 70%;
 }
 
-.modal {
+/* .modal {
   margin: auto;
   color: #781820;
   background-color: #EBEBEB;
@@ -125,7 +138,7 @@ footer .row div {
   width: 40%;
   max-width: 40%;
   text-align: left;
-}
+} */
 
 .modal h1 {
   font-family: "Press Start 2P", sans-serif;
