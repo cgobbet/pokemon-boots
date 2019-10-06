@@ -73,7 +73,7 @@ var pokemonRepository = (function() {
   function showModal(pokemon) {
     $($modalContainer).html('');
     // creates div for modal itself
-    var $modal = $('<div class="container" id="modal"></div>');
+    var $modal = $('#modal-container');
     $modal.addClass('modal');
 
     // creates button to close modal and activate hideModal()
