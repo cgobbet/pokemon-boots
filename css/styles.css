@@ -11,7 +11,8 @@ html, body {
   font-family: "Press Start", sans-serif;
   font-size: 18px;
   text-align: center;
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 header .row div {
@@ -28,8 +29,8 @@ main .row content {
 }
 
 footer .row div {
-  background-color: lightyellow;
-  border: 1px solid orange;
+  background-color: inherit;
+  /* border: 1px solid orange; */
   height: 50px;
 }
 
@@ -79,18 +80,14 @@ footer .row div {
 }
 
 #pokemonButton {
+  font-family: "Press Start 2P", sans-serif;
   background-color: #781820;
-  font-family: "Press Start", sans-serif;
-  font-size:2.5vw;
+  font-size:1.7vw;
   color: #FFF;
-  /* border: inherit;
-  justify-content: center; */
   text-align: center;
-  width: 30%;
+  width: auto;
   border-radius: 80px;
   box-shadow: 0 4px black;
-  transition: 0.6s;
-  width: 30%;
 }
 
 /* start of modal elements  */
@@ -149,24 +146,31 @@ footer .row div {
 
 .modal h2 {
   font-family: "Press Start 2P", sans-serif;
-  font-size: 20px;
+  font-size: 3.5vw;
   margin-top: 0;
 }
 
 .modal p {
   margin-bottom: 0;
   font-family: "Press Start 2P", sans-serif;
+  font-size: 2.5vw;
 }
 
 .modal-close {
   float: right;
   border-radius: 12px;
-  font-weight: bold;
+  /* font-weight: bold; */
   -webkit-appearance: none;
-  border: 0;
+  border: solid 0.5px #cead00;
   background-color: inherit;
-  color: #781820;
-  text-decoration: underline;
+  color: #fff;
+  /* text-decoration: underline; */
+}
+
+.modal-close:hover {
+  /* No underlining when hovering over a link */
+  background-color: #461820;
+  border: solid 0.5px #797979;
 }
 
  .modal-img {
@@ -176,3 +180,7 @@ footer .row div {
   margin-right: auto;
 }
 /*  end of modals */
+
+.footer {
+  padding: 100px;
+}
