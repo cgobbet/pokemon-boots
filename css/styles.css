@@ -85,7 +85,7 @@ footer .row div {
 #pokemonButton {
   font-family: "Neucha", sans-serif;
   background-color: #A9000E;
-  font-size:3vw;
+  font-size:2.5vw;
   color: #FFF;
   text-align: center;
   width: auto;
@@ -145,7 +145,7 @@ footer .row div {
 .modal-close:hover {
   /* No underlining when hovering over a link */
   background-color: #461820;
-  border: solid 0.5px #797979;
+  border: solid 1px #797979;
 }
 
  .modal-img {
