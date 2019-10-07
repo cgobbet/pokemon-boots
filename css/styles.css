@@ -103,8 +103,8 @@ footer .row div {
   top: 100px;
   left: 20px;
   right: 20px;
-  width: 80%;
-  height: 60%;
+  width: 60%;
+  height: auto;
   background: rgba(99, 14, 24, 0.9);
   background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
 }
@@ -116,7 +116,7 @@ footer .row div {
   position: fixed;
   display: block;
   z-index: 3000;
-  height: 45%;
+  height: auto;
 }
 
 .modal h2 {
@@ -129,6 +129,7 @@ footer .row div {
   margin-bottom: 0;
   font-family: "Bubblegum Sans", sans-serif;
   font-size: 3vw;
+  margin-top: 0;
 }
 
 .modal-close {
