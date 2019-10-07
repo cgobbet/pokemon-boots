@@ -10,9 +10,9 @@ html, body {
   color: black;
   font-family: "Bubblegum Sans", sans-serif;
   font-size: 18px;
-  text-align: center;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 header .row div {
@@ -31,39 +31,44 @@ footer .row div {
 }
 
 .img-fluid. {
-  max-width: 120px;
   height: auto;
+  max-width: 120px;
 }
 
 .navbar {
+  font-size: 1.5vw;
   padding: 0;
 }
 
+.form-control {
+  font-size: 1.5vw;
+}
+
 .title {
+  animation: fadein 3s;
   font-family: "Bubblegum Sans", sans-serif;
   font-size:7vw;
   font-weight: bold;
   text-align: center;
-  animation: fadein 3s;
 }
 
 .dateStyle {
-  font-family: "Permanent Marker", sans-serif;
   color: #A9000E;
-  font-size: 96px;
+  font-family: "Permanent Marker", sans-serif;
+  font-size: 7vw;
   font-weight: bold;
   text-align: center;
 }
 
 .hero-bkg-animated {
-  background: gray url(https://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  height: 4000px;
-  padding-top: 40px;
-  box-sizing: border-box;
   -webkit-animation: slide 20s linear infinite;
+  background: gray url(https://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
+  box-sizing: border-box;
+  height: 4000px;
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+  width: 100%;
 }
 
 @-webkit-keyframes slide {
@@ -83,40 +88,40 @@ footer .row div {
 }
 
 #pokemonButton {
-  font-family: "Neucha", sans-serif;
   background-color: #A9000E;
-  font-size:2.5vw;
-  color: #FFF;
-  text-align: center;
-  width: auto;
   border-radius: 80px;
   box-shadow: 0 4px black;
+  color: #FFF;
+  font-family: "Neucha", sans-serif;
+  font-size:2.5vw;
+  text-align: center;
+  width: auto;
 }
 
 /* start of modal elements  */
 
 #modal-container {
-  display: none;
-  text-align: center;
-  border-radius: 12px;
-  padding: 20px;
-  top: 100px;
-  left: 20px;
-  right: 20px;
-  width: 60%;
-  height: auto;
   background: rgba(99, 14, 24, 0.9);
   background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  border-radius: 12px;
+  display: none;
+  height: auto;
+  left: 20px;
+  padding: 20px;
+  right: 20px;
+  text-align: center;
+  top: 100px;
+  width: 60%;
 }
 
 #modal-container.is-visible {
 
-  color: #EBEBEB; // text color on modal
-  font-size: 18px;
-  position: fixed;
+  color: #EBEBEB; /* text color on modal */
   display: block;
-  z-index: 3000;
+  font-size: 18px;
   height: auto;
+  position: fixed;
+  z-index: 3000;
 }
 
 .modal h2 {
@@ -126,20 +131,20 @@ footer .row div {
 }
 
 .modal p {
-  margin-bottom: 0;
   font-family: "Bubblegum Sans", sans-serif;
   font-size: 3vw;
+  margin-bottom: 0;
   margin-top: 0;
 }
 
 .modal-close {
-  font-family: "Bubblegum Sans", sans-serif;
-  float: right;
-  border-radius: 12px;
   -webkit-appearance: none;
-  border: solid 0.5px #cead00;
   background-color: inherit;
+  border: solid 0.5px #cead00;
+  border-radius: 12px;
   color: #fff;
+  float: right;
+  font-family: "Bubblegum Sans", sans-serif;
 }
 
 .modal-close:hover {
@@ -149,10 +154,10 @@ footer .row div {
 }
 
  .modal-img {
-  min-width: 40%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  min-width: 40%;
 }
 /*  end of modals */
 
