@@ -1,10 +1,10 @@
 var pokemonRepository = (function() {
   var repository = [];
-  var apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=200';
-  var $modalContainer = $('#modal-container');
+  var apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=200";
+  var $modalContainer = $("#modal-container");
 
   function add(pokemon) {
-    if (typeof(pokemon) === 'object') {
+    if (typeof pokemon === "object") {
       repository.push(pokemon);
     } else {
       alert("This is not an object");
@@ -16,9 +16,13 @@ var pokemonRepository = (function() {
   }
 
   function addListItem(pokemon) {
-    var $pokemonList = $('.list-group');
-    var $pokemonListItem = $('<li class="list-group-item d-flex justify-content-center" id="pokemonItem">');
-    var $pokemonButton = $('<button type="button" class="btn text-center" id="pokemonButton"></button>');
+    var $pokemonList = $(".list-group");
+    var $pokemonListItem = $(
+      '<li class="list-group-item d-flex justify-content-center" id="pokemonItem">'
+    );
+    var $pokemonButton = $(
+      '<button type="button" class="btn text-center" id="pokemonButton"></button>'
+    );
 
     $pokemonListItem.appendTo($pokemonList);
     $pokemonButton.appendTo($pokemonListItem);
@@ -31,52 +35,59 @@ var pokemonRepository = (function() {
 
   function loadList() {
     return $.ajax(apiUrl, {
-      dataType: 'json'
-    }).then(function(pokemon) {
-      $.each(pokemon.results, function(i, pokemon) {
-        var pokemon = {
-          name: pokemon.name,
-          detailsurl: pokemon.url
-        };
-        add(pokemon);
+      dataType: "json"
+    })
+      .then(function(pokemon) {
+        $.each(pokemon.results, function(i, pokemon) {
+          var pokemon = {
+            name: pokemon.name,
+            detailsurl: pokemon.url
+          };
+          add(pokemon);
+        });
+      })
+      .catch(function(e) {
+        console.error(e);
       });
-    }).catch(function(e) {
-      console.error(e);
-    });
   }
 
-  function loadDetails(pokemon) { // loads details of pokemons
+  function loadDetails(pokemon) {
+    // loads details of pokemons
     var url = pokemon.detailsurl;
     return $.ajax(url, {
-        dataType: 'json'
-      })
+      dataType: "json"
+    })
       .then(function(details) {
         // Now we add the details to the item
         pokemon.imageUrl = details.sprites.front_shiny;
         pokemon.weight = details.weight;
         pokemon.height = details.height;
         pokemon.types = Object.keys(details.types);
-      }).catch(function(e) {
+      })
+      .catch(function(e) {
         console.error(e);
       });
   }
 
-  function showDetails(pokemon) { // retrieves details from API
+  function showDetails(pokemon) {
+    // retrieves details from API
     pokemonRepository.loadDetails(pokemon).then(function() {
       showModal(pokemon);
     });
   }
 
   function showModal(pokemon) {
-    $($modalContainer).html('');
+    $($modalContainer).html("");
     // creates div for modal itself
-    var $modal = $('#modal-container');
-    $modal.addClass('modal');
+    var $modal = $("#modal-container");
+    $modal.addClass("modal");
 
     // creates button to close modal and activate hideModal()
-    var $modalCloseButton = $('<button type="button" class="btn btn-primary" data-toggle="modal"></button>');
-    $modalCloseButton.addClass('modal-close');
-    $modalCloseButton.text('Close');
+    var $modalCloseButton = $(
+      '<button type="button" class="btn btn-primary" data-toggle="modal"></button>'
+    );
+    $modalCloseButton.addClass("modal-close");
+    $modalCloseButton.text("Close");
     $modalCloseButton.click(function() {
       hideModal();
     });
@@ -86,11 +97,18 @@ var pokemonRepository = (function() {
     /*  addClass not added as class will be "modal h2" */
 
     var $modalPokemonImg = $('<img class="modal-img"></img>');
-    $modalPokemonImg.attr('src', pokemon.imageUrl);
-    $modalPokemonImg.addClass('modal-img');
+    $modalPokemonImg.attr("src", pokemon.imageUrl);
+    $modalPokemonImg.addClass("modal-img");
 
     var $modalPokemonHeight = $('<p class="capital"></p>');
-    $modalPokemonHeight.text(pokemon.name + ' is ' + (pokemon.height / 10) + 'm tall and weighs ' + (pokemon.weight / 10) + ' kg!');
+    $modalPokemonHeight.text(
+      pokemon.name +
+        " is " +
+        pokemon.height / 10 +
+        "m tall and weighs " +
+        pokemon.weight / 10 +
+        " kg!"
+    );
     /*  addClass not added as class will be "modal p" */
 
     $modalCloseButton.appendTo($modal);
@@ -99,14 +117,14 @@ var pokemonRepository = (function() {
     $modalPokemonHeight.appendTo($modal);
     $modal.appendTo($modalContainer);
 
-    $modalContainer.addClass('is-visible');
+    $modalContainer.addClass("is-visible");
   }
 
   function hideModal() {
-    $modalContainer.removeClass('is-visible');
+    $modalContainer.removeClass("is-visible");
   }
 
-  $('body').click(function() {
+  $("body").click(function() {
     hideModal();
   });
 
@@ -123,7 +141,6 @@ var pokemonRepository = (function() {
     loadList: loadList,
     loadDetails: loadDetails
   };
-
 })();
 /*  end of IIFE function */
 
