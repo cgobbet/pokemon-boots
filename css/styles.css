@@ -95,6 +95,7 @@ footer .row div {
   font-size:4vw;
   text-align: center;
   width: auto;
+  text-transform:capitalize;  
 }
 
 /* start of modal elements  */
