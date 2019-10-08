@@ -92,7 +92,7 @@ var pokemonRepository = (function() {
       hideModal();
     });
 
-    var $modalPokemonName = $('<h2 class="capital"></h2>');
+    var $modalPokemonName = $('<h1 class="modal-title modal-header"></h1>');
     $modalPokemonName.text(pokemon.name);
     /*  addClass not added as class will be "modal h2" */
 
@@ -100,7 +100,7 @@ var pokemonRepository = (function() {
     $modalPokemonImg.attr("src", pokemon.imageUrl);
     $modalPokemonImg.addClass("modal-img");
 
-    var $modalPokemonHeight = $('<p class="capital"></p>');
+    var $modalPokemonHeight = $('<p class="modal-body"></p>');
     $modalPokemonHeight.text(
       pokemon.name +
         " is " +
