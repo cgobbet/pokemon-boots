@@ -4,7 +4,6 @@ Text Color (Gray13): #212121;
 Secondary Color (Gray): #ABABAB;
 Tertiary Color (Yellow): #cead00;
 */
-
 html, body {
   background-color: #f7f8fb;
   color: black;
@@ -22,11 +21,13 @@ header .row div {
 main .row div,
 main .row content {
   background-color: inherit;
+  color: inherit;
   height: auto;
 }
 
 footer .row div {
   background-color: inherit;
+  color: inherit;
   height: 50px;
 }
 
@@ -46,12 +47,13 @@ footer .row div {
 
 .title {
   font-family: "Bubblegum Sans", sans-serif;
-  font-size:9vw;
+  font-size: 9vw;
   font-weight: bold;
   text-align: center;
 }
 
 .dateStyle {
+  background-color: inherit;
   color: #A9000E;
   font-family: "Permanent Marker", sans-serif;
   font-size: 9vw;
@@ -60,10 +62,10 @@ footer .row div {
 }
 
 .hero-bkg-animated {
-  -webkit-animation: slide 20s linear infinite;
+  -webkit-animation: slide 2s linear infinite;
   background: gray url(https://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
   box-sizing: border-box;
-  height: 4000px;
+  height: auto;
   margin: 0;
   padding-top: 40px;
   text-align: center;
@@ -71,19 +73,22 @@ footer .row div {
 }
 
 @-webkit-keyframes slide {
-    from { background-position: 0 0; }
-    to { background-position: -400px 0; }
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -400px 0;
+  }
 }
 
 /* Background animation by subz - https://tinyurl.com/y4ezm4bs */
-
 /* .capital {
   text-transform:capitalize;
 } */
-
 #pokemonItem {
-  background-color:inherit;
-  border:inherit;
+  background-color: inherit;
+  border: inherit;
 }
 
 #pokemonButton {
@@ -92,14 +97,13 @@ footer .row div {
   box-shadow: 0 4px black;
   color: #FFF;
   font-family: "Neucha", sans-serif;
-  font-size:4vw;
+  font-size: 4vw;
   text-align: center;
   width: auto;
-  text-transform:capitalize;  
+  text-transform: capitalize;
 }
 
 /* start of modal elements  */
-
 .modal {
   background: rgba(99, 14, 24, 0.9);
   background-image: url("https://www.transparenttextures.com/patterns/basketball.png");
@@ -115,8 +119,8 @@ footer .row div {
 }
 
 #modal-container.is-visible {
-
-  color: #EBEBEB; /* text color on modal */
+  color: #EBEBEB;
+  /* text color on modal */
   display: block;
   font-size: 18px;
   height: auto;
@@ -139,9 +143,8 @@ footer .row div {
 
 .modal-body {
   position: relative;
-  text-transform:capitalize;
+  text-transform: capitalize;
   flex: 1 1 auto;
-  padding: $modal-inner-padding;
 }
 
 .modal-close {
@@ -160,7 +163,7 @@ footer .row div {
   border: solid 1px #797979;
 }
 
- .modal-img {
+.modal-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -168,16 +171,14 @@ footer .row div {
 }
 
 /*  end of modals */
-
 .footer {
   padding: 100px;
 }
 
 /* media queries  */
-
 @media screen and (max-width: 1200px) {
   #pokemonButton {
-    font-size:6vw;
+    font-size: 6vw;
   }
 
   .title {
@@ -186,12 +187,13 @@ footer .row div {
 
   .dateStyle {
     font-size: 9vw;
-  };
+  }
+
 }
 
 @media screen and (max-width: 750px) {
   #pokemonButton {
-    font-size:7vw;
+    font-size: 7vw;
   }
 
   .title {
@@ -200,12 +202,12 @@ footer .row div {
 
   .dateStyle {
     font-size: 9vw;
-  };
+  }
 }
 
 @media screen and (max-width: 520px) {
   #pokemonButton {
-    font-size7vw;
+    font-size: 7vw;
   }
 
   .title {
@@ -214,19 +216,19 @@ footer .row div {
 
   .dateStyle {
     font-size: 9vw;
-  };
+  }
 }
 
 @media screen and (max-width: 360px) {
   #pokemonButton {
-    font-size:10vw;
+    font-size: 10vw;
   }
 
   .title {
-    font-size:10vw;
+    font-size: 10vw;
   }
 
   .dateStyle {
     font-size: 10vw;
-  };
+  }
 }
