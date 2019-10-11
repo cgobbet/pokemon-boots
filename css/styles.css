@@ -38,12 +38,8 @@ footer .row div {
 }
 
 .navbar {
-  font-size: 1.5vw;
+  font-size: 2vw;
   padding: 0;
-}
-
-.form-control {
-  font-size: 1.5vw;
 }
 
 .title {
@@ -181,6 +177,10 @@ footer .row div {
 
 /* media queries  */
 @media screen and (max-width: 1200px) {
+  .navbar {
+    font-size: 3.5vw;
+  }
+
   #pokemonButton {
     font-size: 6vw;
   }
@@ -195,6 +195,10 @@ footer .row div {
 }
 
 @media screen and (max-width: 750px) {
+  .navbar {
+    font-size: 4vw;
+  }
+
   #pokemonButton {
     font-size: 7vw;
   }
@@ -209,6 +213,10 @@ footer .row div {
 }
 
 @media screen and (max-width: 520px) {
+  .navbar {
+    font-size: 4.5vw;
+  }
+
   #pokemonButton {
     font-size: 7vw;
   }
@@ -223,6 +231,10 @@ footer .row div {
 }
 
 @media screen and (max-width: 360px) {
+  .navbar {
+    font-size: 5vw;
+  }
+
   #pokemonButton {
     font-size: 10vw;
   }
